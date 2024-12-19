@@ -53,7 +53,8 @@ ffmpeg_config: libass_build libplacebo_build
 		--enable-ladspa \
 		--enable-libbs2b \
 		--enable-gpl --enable-libxvid --enable-libx264 \
-		--enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvo-amrwbenc
+		--enable-version3 --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvo-amrwbenc \
+		--enable-version3 --enable-libdrm --enable-rkmpp --enable-rkrga
 
 ffmpeg_build: ffmpeg_config
 	scripts/ffmpeg-build $(MFLAGS)
